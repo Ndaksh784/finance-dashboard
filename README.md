@@ -36,7 +36,7 @@ The goal was to build something that feels polished and production-ready while k
 
 ## Live Demo
 
-> **Deployed Link:** [coming soon / add your Vercel or Netlify link here]
+> **Deployed Link:** finance-dashboard-y3c2-fjijd1xkp-ndaksh784s-projects.vercel.app
 >
 > **Repository:** https://github.com/Ndaksh784/finance-dashboard
 
