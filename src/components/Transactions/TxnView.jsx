@@ -29,7 +29,6 @@ export default function TxnView() {
     deleteTransaction,
   } = useApp();
 
-  // ── Filtered + sorted list ──────────────────────────────────────────────────
   const filtered = useMemo(() => {
     const q = search.toLowerCase();
     return transactions
@@ -53,14 +52,14 @@ export default function TxnView() {
 
   return (
     <div className="anim-fade-up">
-      {/* ── Filter bar ───────────────────────────────── */}
+      {}
       <div
         style={{
           display: "flex", gap: 9, marginBottom: 14,
           flexWrap: "wrap", alignItems: "center",
         }}
       >
-        {/* Search */}
+        {}
         <div style={{ position: "relative", flex: 1, minWidth: 150 }}>
           <Search
             size={13}
@@ -77,20 +76,20 @@ export default function TxnView() {
           />
         </div>
 
-        {/* Type filter */}
+        {}
         <select value={fType} onChange={(e) => setFType(e.target.value)} style={inputStyle}>
           <option value="all">All Types</option>
           <option value="income">Income</option>
           <option value="expense">Expense</option>
         </select>
 
-        {/* Category filter */}
+        {}
         <select value={fCat} onChange={(e) => setFCat(e.target.value)} style={inputStyle}>
           <option value="all">All Categories</option>
           {CATEGORIES.map((c) => <option key={c}>{c}</option>)}
         </select>
 
-        {/* Add button (admin only) */}
+        {}
         {role === "admin" && (
           <button
             onClick={openAddModal}
@@ -106,7 +105,7 @@ export default function TxnView() {
         )}
       </div>
 
-      {/* ── Table ────────────────────────────────────── */}
+      {}
       <div style={{ background: card, border: `1px solid ${border}`, borderRadius: 16, overflow: "hidden" }}>
         {/* Header */}
         <div
@@ -126,7 +125,7 @@ export default function TxnView() {
           {role === "admin" && <span>Actions</span>}
         </div>
 
-        {/* Rows */}
+        {}
         {filtered.length === 0 ? (
           <EmptyState />
         ) : (
@@ -150,7 +149,6 @@ export default function TxnView() {
   );
 }
 
-// ── Sub-components ────────────────────────────────────────────────────────────
 
 function TxnRow({ txn, gridCols, isAdmin, onEdit, onDelete }) {
   const { date, description, category, type, amount } = txn;

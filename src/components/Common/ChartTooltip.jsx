@@ -1,6 +1,6 @@
 import { THEME } from "../../data/mockData";
 
-/** Shared Recharts tooltip for area / bar charts. */
+
 export function ChartTooltip({ active, payload, label }) {
   if (!active || !payload?.length) return null;
 
@@ -39,7 +39,6 @@ export function ChartTooltip({ active, payload, label }) {
   );
 }
 
-/** Pie-chart specific tooltip. */
 export function PieTooltip({ active, payload }) {
   if (!active || !payload?.length) return null;
   const p = payload[0];

@@ -28,7 +28,7 @@ export default function InsightsView() {
 
   return (
     <div className="anim-fade-up">
-      {/* ── Insight summary cards ─────────────────────── */}
+      {}
       <div
         className="ins-grid"
         style={{ display: "grid", gridTemplateColumns: "repeat(3,1fr)", gap: 12, marginBottom: 14 }}
@@ -56,7 +56,7 @@ export default function InsightsView() {
         />
       </div>
 
-      {/* ── Monthly comparison bar chart ─────────────── */}
+      {}
       <div
         style={{ background: card, border: `1px solid ${border}`, borderRadius: 16, padding: 18, marginBottom: 14 }}
       >
@@ -85,7 +85,7 @@ export default function InsightsView() {
         </div>
       </div>
 
-      {/* ── Category breakdown ───────────────────────── */}
+      {}
       <div style={{ background: card, border: `1px solid ${border}`, borderRadius: 16, padding: 18 }}>
         <div style={{ fontWeight: 600, fontSize: 13, marginBottom: 16 }}>Spending by Category</div>
 
@@ -109,7 +109,6 @@ export default function InsightsView() {
   );
 }
 
-// ── Sub-component ─────────────────────────────────────────────────────────────
 
 function CategoryBar({ cat, total, max, isTop }) {
   const pct     = total > 0 ? ((cat.value / total) * 100).toFixed(1) : 0;
@@ -124,7 +123,7 @@ function CategoryBar({ cat, total, max, isTop }) {
           justifyContent: "space-between", marginBottom: 7,
         }}
       >
-        {/* Left: emoji + name + TOP badge */}
+        {}
         <div style={{ display: "flex", alignItems: "center", gap: 8, fontSize: 12 }}>
           <span style={{ fontSize: 17 }}>{CATEGORY_EMOJI[cat.name] || "📦"}</span>
           <span style={{ fontWeight: 500 }}>{cat.name}</span>
@@ -145,7 +144,7 @@ function CategoryBar({ cat, total, max, isTop }) {
           )}
         </div>
 
-        {/* Right: pct + amount */}
+        {}
         <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
           <span style={{ fontSize: 11, color: "#64748b" }}>{pct}%</span>
           <span
@@ -160,7 +159,7 @@ function CategoryBar({ cat, total, max, isTop }) {
         </div>
       </div>
 
-      {/* Progress bar */}
+      {}
       <div
         style={{
           background: "rgba(255,255,255,0.06)",

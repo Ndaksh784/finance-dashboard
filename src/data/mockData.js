@@ -1,4 +1,4 @@
-// ── Theme colours ─────────────────────────────────────────────────────────────
+
 export const THEME = {
   green:  "#10d9a0",
   red:    "#f87171",
@@ -12,7 +12,6 @@ export const THEME = {
   muted:  "#64748b",
 };
 
-// ── Category metadata ─────────────────────────────────────────────────────────
 export const CATEGORIES = [
   "Food", "Transport", "Entertainment", "Health",
   "Shopping", "Utilities", "Salary", "Freelance", "Investment", "Other",
@@ -44,7 +43,7 @@ export const CATEGORY_EMOJI = {
   Other:         "📦",
 };
 
-// ── Seed transactions ─────────────────────────────────────────────────────────
+
 export const SEED_TRANSACTIONS = [
   { id: 1,  date: "2025-04-02", description: "Monthly Salary",       amount: 6500, type: "income",  category: "Salary" },
   { id: 2,  date: "2025-04-03", description: "Grocery Shopping",     amount: 145,  type: "expense", category: "Food" },

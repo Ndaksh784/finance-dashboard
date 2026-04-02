@@ -11,7 +11,7 @@ const NAV_ITEMS = [
   { id: "insights",     icon: <Lightbulb size={15} />,       label: "Insights" },
 ];
 
-// ── Desktop sidebar ───────────────────────────────────────────────────────────
+
 export function Sidebar() {
   const { setActiveTab } = useApp();
 
@@ -32,7 +32,6 @@ export function Sidebar() {
   );
 }
 
-// ── Mobile overlay drawer ─────────────────────────────────────────────────────
 export function MobileSidebar() {
   const { sidebarOpen, setSidebarOpen, setActiveTab } = useApp();
 
@@ -51,7 +50,7 @@ export function MobileSidebar() {
         }}
       />
 
-      {/* Drawer */}
+      {}
       <aside
         style={{
           position: "fixed", left: 0, top: 0,
@@ -78,13 +77,12 @@ export function MobileSidebar() {
   );
 }
 
-// ── Shared inner content ──────────────────────────────────────────────────────
 function SidebarContent({ onNavigate }) {
   const { activeTab, role, setRole, netBalance } = useApp();
 
   return (
     <>
-      {/* Logo */}
+      {}
       <div
         style={{
           display: "flex", alignItems: "center",
@@ -105,7 +103,7 @@ function SidebarContent({ onNavigate }) {
         </span>
       </div>
 
-      {/* Nav links */}
+      {}
       {NAV_ITEMS.map((item) => (
         <button
           key={item.id}
@@ -128,7 +126,7 @@ function SidebarContent({ onNavigate }) {
 
       <div style={{ flex: 1 }} />
 
-      {/* Net balance card */}
+      {}
       <div
         style={{
           background: "rgba(16,217,160,0.06)",
@@ -154,7 +152,7 @@ function SidebarContent({ onNavigate }) {
         </div>
       </div>
 
-      {/* Role switcher */}
+      {}
       <div>
         <div
           style={{
