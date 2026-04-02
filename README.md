@@ -36,7 +36,7 @@ The goal was to build something that feels polished and production-ready while k
 
 ## Live Demo
 
-> **Deployed Link:** finance-dashboard-y3c2-fjijd1xkp-ndaksh784s-projects.vercel.app
+> > **Deployed Link:** [View Live App](https://finance-dashboard-y3c2-fjijd1xkp-ndaksh784s-projects.vercel.app)
 >
 > **Repository:** https://github.com/Ndaksh784/finance-dashboard
 
