@@ -43,11 +43,13 @@ The goal was to build something that feels polished and production-ready while k
 ---
 ## 📸 Screenshots
 
-![Dashboard](./screenshots/dashboard.png)
+![Dashboard](./screenshots/dasboard.png)
 
 ![Transactions](./screenshots/transaction.png)
 
 ![Insights](./screenshots/insights.png)
+
+![Viewers](./screenshots/viewers.png)
 
 ## Tech Stack
 
