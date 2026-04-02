@@ -38,7 +38,7 @@ The goal was to build something that feels polished and production-ready while k
 
 > **Deployed Link:** [coming soon / add your Vercel or Netlify link here]
 >
-> **Repository:** [https://github.com/yourusername/finance-dashboard](https://github.com/yourusername/finance-dashboard)
+> **Repository:** https://github.com/Ndaksh784/finance-dashboard
 
 ---
 
