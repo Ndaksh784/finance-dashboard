@@ -41,6 +41,16 @@ The goal was to build something that feels polished and production-ready while k
 > **Repository:** https://github.com/Ndaksh784/finance-dashboard
 
 ---
+## 📸 Screenshots
+
+### Dashboard
+![Dashboard]("C:\Users\ASUS\OneDrive\Desktop\finance-dashboard\finance-dashboard\screenshots\dasboard.png")
+
+### Transactions
+![Transactions]("C:\Users\ASUS\OneDrive\Desktop\finance-dashboard\finance-dashboard\screenshots\transaction.png")
+
+### Insights
+![Insights]("C:\Users\ASUS\OneDrive\Desktop\finance-dashboard\finance-dashboard\screenshots\insights.png")
 
 ## Tech Stack
 
