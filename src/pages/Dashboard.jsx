@@ -20,16 +20,16 @@ export default function DashboardPage() {
   return (
     <div style={{ display: "flex", height: "100vh", overflow: "hidden" }}>
 
-      {/* ── Desktop sidebar ─────────────────────────── */}
+      {}
       <Sidebar />
 
-      {/* ── Mobile sidebar overlay ──────────────────── */}
+      {}
       <MobileSidebar />
 
-      {/* ── Main column ─────────────────────────────── */}
+      {}
       <div style={{ flex: 1, minWidth: 0, display: "flex", flexDirection: "column", overflow: "hidden" }}>
 
-        {/* Top bar */}
+        {}
         <header
           style={{
             padding: "13px 20px",
@@ -40,7 +40,7 @@ export default function DashboardPage() {
             flexShrink: 0, zIndex: 10,
           }}
         >
-          {/* Left: hamburger + page title */}
+          {}
           <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
             <button
               id="hamburger"
@@ -58,7 +58,7 @@ export default function DashboardPage() {
             </span>
           </div>
 
-          {/* Right: role badge */}
+          {}
           <div
             style={{
               background: role === "admin"
@@ -73,7 +73,7 @@ export default function DashboardPage() {
           </div>
         </header>
 
-        {/* Scrollable content */}
+        {}
         <div style={{ flex: 1, overflow: "auto", padding: "18px 20px" }}>
           {activeTab === "dashboard"    && <DashView />}
           {activeTab === "transactions" && <TxnView />}
@@ -81,7 +81,7 @@ export default function DashboardPage() {
         </div>
       </div>
 
-      {/* ── Modal (portal-free, covers everything) ───── */}
+      {}
       {modal && <TxnModal />}
     </div>
   );
