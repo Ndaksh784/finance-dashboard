@@ -158,7 +158,7 @@ finance-dashboard/
 
 ```bash
 # 1. Clone the repository
-git clone https://github.com/Ndaksh784/finance-dashboard
+git clone https://github.com/yourusername/finance-dashboard.git
 
 # 2. Move into the project directory
 cd finance-dashboard
@@ -168,18 +168,25 @@ npm install
 
 # 4. Start the development server
 npm run dev
-
+```
 
 Open [http://localhost:5173](http://localhost:5173) in your browser.
 
+### Build for Production
 
+```bash
 npm run build
+```
 
+Preview the production build locally:
+
+```bash
 npm run preview
+```
 
 ---
 
-
+## Role Based Access
 
 Roles are simulated entirely on the frontend. Switch between them using the dropdown at the bottom of the sidebar. No login required — this demonstrates how UI behavior adapts based on role state.
 
@@ -197,7 +204,7 @@ When in **Viewer** mode, the Add button and all Edit / Delete row actions are co
 
 ---
 
-
+## State Management
 
 All application state is centralised in `src/context/AppContext.jsx` using React's built-in Context API. A custom `useApp()` hook provides clean access to state and actions from any component without prop drilling.
 
@@ -289,8 +296,8 @@ Given more time, here is what I would build on top of this foundation:
 Daksh Negi
 Frontend Developer
 
-- GitHub:https://github.com/Ndaksh784
-- LinkedIn: https://www.linkedin.com/in/daksh-negi-2060822a3/
+- GitHub: https://github.com/Ndaksh784
+- LinkedIn:https://www.linkedin.com/in/daksh-negi-2060822a3/
 - Email: ndaksh874@gmail.com
 
 ---
