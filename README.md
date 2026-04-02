@@ -43,14 +43,11 @@ The goal was to build something that feels polished and production-ready while k
 ---
 ## 📸 Screenshots
 
-### Dashboard
-![Dashboard]("C:\Users\ASUS\OneDrive\Desktop\finance-dashboard\finance-dashboard\screenshots\dasboard.png")
+![Dashboard](./screenshots/dashboard.png)
 
-### Transactions
-![Transactions]("C:\Users\ASUS\OneDrive\Desktop\finance-dashboard\finance-dashboard\screenshots\transaction.png")
+![Transactions](./screenshots/transaction.png)
 
-### Insights
-![Insights]("C:\Users\ASUS\OneDrive\Desktop\finance-dashboard\finance-dashboard\screenshots\insights.png")
+![Insights](./screenshots/insights.png)
 
 ## Tech Stack
 
