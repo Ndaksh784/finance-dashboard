@@ -52,14 +52,14 @@ export default function TxnView() {
 
   return (
     <div className="anim-fade-up">
-      {}
+      {/* Filters & Search */}
       <div
         style={{
           display: "flex", gap: 9, marginBottom: 14,
           flexWrap: "wrap", alignItems: "center",
         }}
       >
-        {}
+        {/* Search */}
         <div style={{ position: "relative", flex: 1, minWidth: 150 }}>
           <Search
             size={13}
@@ -76,20 +76,20 @@ export default function TxnView() {
           />
         </div>
 
-        {}
+        {/* Type & Category Filters */}
         <select value={fType} onChange={(e) => setFType(e.target.value)} style={inputStyle}>
           <option value="all">All Types</option>
           <option value="income">Income</option>
           <option value="expense">Expense</option>
         </select>
 
-        {}
+        {/* Category Filter */}
         <select value={fCat} onChange={(e) => setFCat(e.target.value)} style={inputStyle}>
           <option value="all">All Categories</option>
           {CATEGORIES.map((c) => <option key={c}>{c}</option>)}
         </select>
 
-        {}
+          {/* Legend */}
         {role === "admin" && (
           <button
             onClick={openAddModal}
@@ -105,7 +105,7 @@ export default function TxnView() {
         )}
       </div>
 
-      {}
+      {/* Category Summary */}
       <div style={{ background: card, border: `1px solid ${border}`, borderRadius: 16, overflow: "hidden" }}>
         {/* Header */}
         <div
@@ -125,7 +125,7 @@ export default function TxnView() {
           {role === "admin" && <span>Actions</span>}
         </div>
 
-        {}
+        {/* Transaction Rows */}
         {filtered.length === 0 ? (
           <EmptyState />
         ) : (

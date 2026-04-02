@@ -55,7 +55,7 @@ export default function TxnModal() {
           width: "100%", maxWidth: 400,
         }}
       >
-        {}
+        { Header }
         <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 22 }}>
           <span style={{ fontWeight: 700, fontSize: 15, letterSpacing: "-0.03em" }}>
             {modal.mode === "add" ? "✨ Add Transaction" : "✏️ Edit Transaction"}
@@ -72,9 +72,9 @@ export default function TxnModal() {
           </button>
         </div>
 
-        {}
+        {/* Form Fields */}
         <div style={{ display: "flex", flexDirection: "column", gap: 13 }}>
-          {}
+          {/* Date */}
           <div>
             <label style={labelStyle}>Date</label>
             <input
@@ -85,7 +85,7 @@ export default function TxnModal() {
             />
           </div>
 
-          {}
+          {/* Description */}
           <div>
             <label style={labelStyle}>Description</label>
             <input
@@ -97,7 +97,7 @@ export default function TxnModal() {
             />
           </div>
 
-          {}
+          {/* Amount & Type */}
           <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 10 }}>
             <div>
               <label style={labelStyle}>Amount ($)</label>
@@ -120,7 +120,7 @@ export default function TxnModal() {
             </div>
           </div>
 
-          {}
+          {/* Category */}
           <div>
             <label style={labelStyle}>Category</label>
             <select value={form.category} onChange={(e) => set("category", e.target.value)} style={inputStyle}>
@@ -133,7 +133,7 @@ export default function TxnModal() {
           </div>
         </div>
 
-        {}
+        {/* Action Buttons */}
         <div style={{ display: "flex", gap: 10, marginTop: 22 }}>
           <button
             onClick={() => setModal(null)}

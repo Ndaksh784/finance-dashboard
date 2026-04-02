@@ -26,7 +26,7 @@ export default function DashView() {
 
   return (
     <div className="anim-fade-up">
-      {}
+      {/* Summary Cards */ }
       <div
         className="stat-grid"
         style={{ display: "grid", gridTemplateColumns: "repeat(3,1fr)", gap: 12, marginBottom: 14 }}
@@ -36,12 +36,12 @@ export default function DashView() {
         <StatCard label="Total Expenses" value={`-${formatCurrency(totalExpense)}`} color={R}  icon={<ArrowDownRight size={15} />} />
       </div>
 
-      {}
+      {/* Monthly Trend & Category Breakdown */ }
       <div
         className="chart-grid"
         style={{ display: "grid", gridTemplateColumns: "1.6fr 1fr", gap: 12, marginBottom: 14 }}
       >
-        {}
+        {/* Monthly Trend */ }
         <div style={{ background: card, border: `1px solid ${border}`, borderRadius: 16, padding: 18 }}>
           <div style={{ fontWeight: 600, fontSize: 13, marginBottom: 3 }}>Monthly Trend</div>
           <div style={{ fontSize: 11, color: muted, marginBottom: 14 }}>Income vs Expenses</div>
@@ -71,7 +71,7 @@ export default function DashView() {
           </div>
         </div>
 
-        {}
+        {/* Spending Breakdown */ }
         <div style={{ background: card, border: `1px solid ${border}`, borderRadius: 16, padding: 18 }}>
           <div style={{ fontWeight: 600, fontSize: 13, marginBottom: 3 }}>Spending Breakdown</div>
           <div style={{ fontSize: 11, color: muted, marginBottom: 8 }}>By category</div>
@@ -99,7 +99,7 @@ export default function DashView() {
         </div>
       </div>
 
-      {}
+      {/* Recent Transactions */ }
       <div style={{ background: card, border: `1px solid ${border}`, borderRadius: 16, padding: 18 }}>
         <div style={{ fontWeight: 600, fontSize: 13, marginBottom: 14 }}>Recent Transactions</div>
         {transactions.slice(0, 6).map((t) => (

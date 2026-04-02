@@ -50,7 +50,7 @@ export function MobileSidebar() {
         }}
       />
 
-      {}
+      {/* Sidebar */}
       <aside
         style={{
           position: "fixed", left: 0, top: 0,
@@ -82,7 +82,7 @@ function SidebarContent({ onNavigate }) {
 
   return (
     <>
-      {}
+      {/* Brand */}
       <div
         style={{
           display: "flex", alignItems: "center",
@@ -103,7 +103,7 @@ function SidebarContent({ onNavigate }) {
         </span>
       </div>
 
-      {}
+      {/* Navigation */}
       {NAV_ITEMS.map((item) => (
         <button
           key={item.id}
@@ -126,7 +126,7 @@ function SidebarContent({ onNavigate }) {
 
       <div style={{ flex: 1 }} />
 
-      {}
+      {/* Net Balance */}   
       <div
         style={{
           background: "rgba(16,217,160,0.06)",
@@ -152,7 +152,7 @@ function SidebarContent({ onNavigate }) {
         </div>
       </div>
 
-      {}
+      {/* Role Switcher */}
       <div>
         <div
           style={{
